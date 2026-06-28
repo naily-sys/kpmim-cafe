@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#F7F2EC;
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:20px;
+}
+
+.card{
+    width:100%;
+    max-width:550px;
+
+    background:white;
+
+    padding:45px;
+
+    border-radius:24px;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.08);
+}
+
+.logo{
+    text-align:center;
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+h1{
+    text-align:center;
+
+    color:#4B2E1E;
+
+    font-size:2.2rem;
+    font-weight:300;
+
+    margin-bottom:8px;
+}
+
+.subtitle{
+    text-align:center;
+
+    color:#8B6B52;
+
+    margin-bottom:20px;
+}
+
+.cafe-badge{
+    display:block;
+
+    width:fit-content;
+
+    margin:0 auto 30px;
+
+    background:#EFE2D0;
+
+    color:#6F4E37;
+
+    padding:10px 18px;
+
+    border-radius:20px;
+
+    font-weight:600;
+}
+
+label{
+    display:block;
+
+    color:#4B2E1E;
+
+    font-weight:500;
+
+    margin-bottom:8px;
+
+    text-align:left;
+}
+
+input{
+    width:100%;
+
+    padding:14px 16px;
+
+    border:1px solid #D9C4A7;
+
+    border-radius:12px;
+
+    background:#FCFAF7;
+
+    font-size:1rem;
+
+    margin-bottom:18px;
+
+    transition:.3s;
+}
+
+input:focus{
+    outline:none;
+
+    border-color:#6F4E37;
+
+    box-shadow:
+        0 0 0 3px rgba(111,78,55,.1);
+}
+
+.btn{
+    width:100%;
+
+    border:none;
+
+    padding:14px;
+
+    border-radius:12px;
+
+    background:#6F4E37;
+
+    color:white;
+
+    font-size:1rem;
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#5A3D2B;
+}
+
+.error{
+    color:#C0392B;
+    font-size:.85rem;
+
+    margin-top:-12px;
+    margin-bottom:15px;
+}
+
+.login-link{
+    text-align:center;
+
+    margin-top:25px;
+
+    color:#8B6B52;
+}
+
+.login-link a{
+    color:#6F4E37;
+
+    font-weight:600;
+
+    text-decoration:none;
+}
+
+.login-link a:hover{
+    text-decoration:underline;
+}
+
+.back-link{
+    display:block;
+
+    text-align:center;
+
+    margin-top:15px;
+
+    color:#A07850;
+
+    text-decoration:none;
+
+    font-size:.9rem;
+}
+
+.back-link:hover{
+    color:#6F4E37;
+}
+
+@media(max-width:768px){
+
+    .card{
+        padding:35px 25px;
+    }
+
+    h1{
+        font-size:1.9rem;
+    }
+}

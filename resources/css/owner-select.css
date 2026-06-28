@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:
+    linear-gradient(
+        rgba(44,30,20,.75),
+        rgba(44,30,20,.75)
+    ),
+    url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1600&q=80');
+
+    background-size:cover;
+    background-position:center;
+
+    padding:30px;
+}
+
+.container{
+    width:100%;
+    max-width:950px;
+
+    background:rgba(255,248,240,.97);
+
+    border-radius:30px;
+
+    padding:50px;
+
+    box-shadow:
+    0 20px 50px rgba(0,0,0,.25);
+
+    text-align:center;
+}
+
+.logo{
+    font-size:4rem;
+    margin-bottom:10px;
+}
+
+h1{
+    color:#4b2e1e;
+    font-size:2.8rem;
+    font-weight:300;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    color:#8b6b52;
+    font-size:1.05rem;
+    margin-bottom:40px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.cafe-btn{
+    text-decoration:none;
+
+    background:white;
+
+    border:2px solid #d9c4a7;
+    border-radius:20px;
+
+    padding:30px 20px;
+
+    transition:.3s;
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,.05);
+}
+
+.cafe-btn:hover{
+    transform:translateY(-5px);
+
+    background:#6F4E37;
+
+    border-color:#6F4E37;
+}
+
+.cafe-icon{
+    font-size:2.5rem;
+    margin-bottom:10px;
+}
+
+.cafe-name{
+    color:#4b2e1e;
+    font-weight:600;
+    font-size:1.1rem;
+}
+
+.cafe-btn:hover .cafe-name{
+    color:white;
+}
+
+.login-link{
+    margin-top:35px;
+
+    color:#8b6b52;
+
+    text-align:center;
+}
+
+.login-link a{
+    color:#6F4E37;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.login-link a:hover{
+    text-decoration:underline;
+}
+
+.back-home{
+    display:block;
+
+    margin-top:15px;
+
+    color:#8b6b52;
+    text-decoration:none;
+}
+
+.back-home:hover{
+    color:#6F4E37;
+}
+
+@media(max-width:768px){
+
+    .container{
+        padding:35px;
+    }
+
+    .grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    h1{
+        font-size:2.2rem;
+    }
+}
+
+@media(max-width:500px){
+
+    .grid{
+        grid-template-columns:1fr;
+    }
+}

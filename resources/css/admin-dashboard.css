@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FAF7F2;
+    padding: 2rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    color: #6F4E37;
+    font-size: 1.8rem;
+}
+
+.subtitle {
+    color: #a07850;
+    margin-top: 0.3rem;
+}
+
+.header-actions {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 10px rgba(111, 78, 55, 0.07);
+}
+
+.number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #6F4E37;
+}
+
+.label {
+    color: #a07850;
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+}
+
+.btn {
+    display: inline-block;
+    background: #6F4E37;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #5a3d2b;
+}
+
+.logout {
+    color: #a07850;
+    text-decoration: none;
+    border: 1px solid #D9C4A7;
+    padding: 0.4rem 1rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.logout:hover {
+    background: #6F4E37;
+    color: white;
+}
+
+h2 {
+    color: #6F4E37;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(111, 78, 55, 0.07);
+}
+
+th {
+    background: #6F4E37;
+    color: white;
+    padding: 1rem;
+    text-align: left;
+}
+
+td {
+    padding: 1rem;
+    border-bottom: 1px solid #f0e6d8;
+    color: #3d2b1a;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tr:hover td {
+    background: #FAF7F2;
+}
+
+.empty {
+    text-align: center;
+    padding: 2rem;
+    color: #a07850;
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .header {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+}

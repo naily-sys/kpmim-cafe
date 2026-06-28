@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            rgba(44, 30, 20, 0.75),
+            rgba(44, 30, 20, 0.75)
+        ),
+        url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1500&q=80');
+
+    background-size: cover;
+    background-position: center;
+}
+
+.card {
+    width: 100%;
+    max-width: 450px;
+
+    background: rgba(255, 248, 240, 0.95);
+    backdrop-filter: blur(10px);
+
+    padding: 2.8rem;
+    border-radius: 24px;
+
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.2),
+        0 0 0 1px rgba(111, 78, 55, 0.1);
+}
+
+.logo {
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 0.8rem;
+}
+
+h1 {
+    text-align: center;
+    color: #4b2e1e;
+    margin-bottom: 0.4rem;
+    font-size: 2rem;
+}
+
+.subtitle {
+    text-align: center;
+    color: #8b6b52;
+    margin-bottom: 2rem;
+}
+
+label {
+    display: block;
+    color: #6f4e37;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+}
+
+input {
+    width: 100%;
+    padding: 0.9rem 1rem;
+
+    border: 2px solid #d9c4a7;
+    border-radius: 12px;
+
+    background: #fffdf9;
+    color: #3d2b1a;
+
+    margin-bottom: 1rem;
+    font-size: 1rem;
+
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #6f4e37;
+    box-shadow: 0 0 0 4px rgba(111, 78, 55, 0.15);
+}
+
+.btn {
+    width: 100%;
+    padding: 1rem;
+
+    border: none;
+    border-radius: 12px;
+
+    background: linear-gradient(135deg, #6f4e37, #8b5e3c);
+    color: white;
+
+    font-size: 1rem;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 24px rgba(111, 78, 55, 0.3);
+}
+
+.register-link {
+    margin-top: 1.5rem;
+    text-align: center;
+    color: #8b6b52;
+    font-size: 0.95rem;
+}
+
+.register-link a {
+    color: #6f4e37;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+.error {
+    color: #dc2626;
+    font-size: 0.85rem;
+    margin-top: -0.7rem;
+    margin-bottom: 0.8rem;
+}
+
+.divider {
+    margin: 1.5rem 0;
+    text-align: center;
+    color: #a78b73;
+    font-size: 0.9rem;
+}
+
+.back-home {
+    display: block;
+    text-align: center;
+    margin-top: 1.5rem;
+    color: #8b6b52;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.back-home:hover {
+    color: #6f4e37;
+}

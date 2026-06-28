@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#F7F2EC;
+    min-height:100vh;
+}
+
+.container{
+    max-width:1000px;
+    margin:0 auto;
+    padding:30px;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin-bottom:30px;
+}
+
+.back-link{
+    text-decoration:none;
+    color:#6F4E37;
+    font-weight:600;
+}
+
+.back-link:hover{
+    color:#5A3D2B;
+}
+
+.page-title{
+    color:#4B2E1E;
+    font-size:2.5rem;
+    font-weight:300;
+    margin-bottom:30px;
+}
+
+.order-card{
+    background:white;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    margin-bottom:20px;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+}
+
+.order-card:hover{
+    transform:translateY(-3px);
+}
+
+.order-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+
+    margin-bottom:20px;
+}
+
+.order-info{
+    display:flex;
+    flex-direction:column;
+    gap:4px;
+}
+
+.order-id{
+    color:#4B2E1E;
+    font-size:1.15rem;
+    font-weight:700;
+}
+
+.cafe-name{
+    color:#8B6B52;
+    font-size:.95rem;
+}
+
+.order-date{
+    color:#A07850;
+    font-size:.85rem;
+}
+
+.badge{
+    padding:8px 14px;
+    border-radius:20px;
+
+    font-size:.8rem;
+    font-weight:600;
+}
+
+.badge-pending{
+    background:#FFF3CD;
+    color:#856404;
+}
+
+.badge-preparing{
+    background:#CCE5FF;
+    color:#004085;
+}
+
+.badge-ready{
+    background:#D4EDDA;
+    color:#155724;
+}
+
+.badge-completed{
+    background:#E2E3E5;
+    color:#383D41;
+}
+
+.items-list{
+    border-top:1px solid #EEE2D2;
+    padding-top:15px;
+}
+
+.item-row{
+    display:flex;
+    justify-content:space-between;
+
+    padding:8px 0;
+
+    color:#3D2B1A;
+}
+
+.order-total{
+    display:flex;
+    justify-content:space-between;
+
+    border-top:1px solid #EEE2D2;
+
+    margin-top:10px;
+    padding-top:15px;
+
+    font-weight:700;
+    color:#6F4E37;
+}
+
+.action-buttons{
+    display:flex;
+    justify-content:flex-end;
+    gap:10px;
+
+    margin-top:20px;
+}
+
+.btn-link{
+    text-decoration:none;
+
+    padding:10px 16px;
+
+    border-radius:10px;
+
+    border:1px solid #D9C4A7;
+
+    font-size:.9rem;
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.receipt-btn{
+    color:#8B6B52;
+}
+
+.track-btn{
+    color:#6F4E37;
+}
+
+.btn-link:hover{
+    background:#6F4E37;
+    color:white;
+    border-color:#6F4E37;
+}
+
+.empty{
+    text-align:center;
+
+    background:white;
+
+    padding:60px 30px;
+
+    border-radius:20px;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,.08);
+}
+
+.empty-icon{
+    font-size:4rem;
+    margin-bottom:15px;
+}
+
+.empty p{
+    color:#8B6B52;
+    margin-bottom:15px;
+}
+
+.start-ordering{
+    color:#6F4E37;
+    font-weight:600;
+    text-decoration:none;
+}
+
+.start-ordering:hover{
+    text-decoration:underline;
+}
+
+@media(max-width:768px){
+
+    .container{
+        padding:20px;
+    }
+
+    .page-title{
+        font-size:2rem;
+    }
+
+    .order-header{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .action-buttons{
+        flex-direction:column;
+    }
+
+    .btn-link{
+        text-align:center;
+    }
+}
