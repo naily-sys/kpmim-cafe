@@ -41,13 +41,6 @@
 
     </div>
 
-    <div class="login-link">
-        Already have an account?
-        <a href="{{ route('owner.login') }}">
-            Login here
-        </a>
-    </div>
-
     <a href="/" class="back-home">
         ← Back to Home
     </a>
